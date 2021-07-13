@@ -15,17 +15,21 @@
       background-size: cover;
       min-height: 100vh;
     }
+
+    a{
+      text-decoration: none;
+    }
+
     .container{
       width: 500px;
       position: absolute;
       top: 50%;
       left: 50%;
-      background-image: linear-gradient(120deg,#227093,#f7f1e3);
+      background-image: linear-gradient(120deg,#c8d6e5,#dff9fb);
       transform: translate(-50%, -50%);
-      padding: 200px;
+      padding: 150px;
       border-radius: 10px;
       box-shadow: 1px 1px 20px ;
-
     }
     .container h1{
       font-size: 30px;
@@ -33,6 +37,7 @@
       background-image: linear-gradient(120deg,#130f40,#c7ecee);
       border-radius: 20px;
       color: white;
+      margin-top: -90px;
     }
     .text{
       text-align: left;
@@ -146,12 +151,28 @@
         margin-top: 20px;
         text-align: left;
         margin-left: -185px;
-      }
+    }
+    .image{
+        cursor: pointer;
+        float: right;
+        margin-top: 10px;
+        position: relative;
+        user-select: none;
+    }
+    .image img{
+        display: block;
+        height: 64px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width:60px;
+    }
     </style>
-
   </head>
   <body>
     <div class="container">
+      <a href="#" class="image">
+        <img src="https://raw.githubusercontent.com/CSPGhostDelta/halamanutama/main/template/home.png" alt="">
+      </a>
       <h1>PERSEGI</h1>
       <form action="/send" method="POST">
         <div class="text">
