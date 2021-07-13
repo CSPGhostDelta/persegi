@@ -10,9 +10,11 @@ def app():
 def send(sum=sum):
     if request.method == "POST":
         persegi = request.form["persegi"]
-        sum = float(persegi) * 2
-        sum2 = float(persegi) * 4
-        return render_template("persegi.html", sum=sum, sum2=sum2)
+        sum = float(persegi)
+        sum2 = float(persegi)
+        sum3 = sum * sum
+        sum4 = sum * 4
+        return render_template("persegi.html", sum=sum3, sum2=sum4)
     else:
         return render_template("persegi.html")
 
